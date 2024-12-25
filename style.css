@@ -1,0 +1,212 @@
+* {
+  font-family: "Hanken Grotesk", serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 70%;
+  max-width: 700px;
+}
+
+.result, .summary {
+  flex: 1;
+  padding: 2rem;
+}
+
+.result {
+  background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  border-radius: 50px;
+}
+
+.result h1 {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.marksper {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 55%;
+  height: 150px;
+  margin: auto;
+}
+
+.marksper span {
+  text-align: center;
+  position: relative;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span.total {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+span.outof {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.3rem;
+}
+
+.result h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.result p {
+  font-size: 1rem;
+  padding: 0% 10%;
+  color: hsl(241, 100%, 89%);
+}
+
+.summary {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px 0px 50px;
+  box-shadow: 10px 10px 40px hsl(221, 100%, 96%);
+  padding-left: 2.5rem;
+
+}
+
+.summary h1 {
+  color: hsl(224, 30%, 27%);
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+ul.summary-list {
+  padding-left: 0px;
+  list-style: none;
+  margin: 0;
+}
+
+ul.summary-list li {
+  padding: 1rem 0;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+ul.summary-list li:first-child {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  background-image: url(./assets/images/icon-reaction.svg);
+  background-repeat: no-repeat;
+  padding-left: 2.8rem;
+  background-position: 7% 53%;
+  color: hsl(0, 100%, 67%);
+  font-weight: 600;
+}
+
+ul.summary-list li:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  background-image: url(./assets/images/icon-memory.svg);
+  background-repeat: no-repeat;
+  padding-left: 2.8rem;
+  background-position: 7% 53%;
+  color: hsl(39, 100%, 56%);
+  font-weight: 600;
+}
+
+ul.summary-list li:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  background-image: url(./assets/images/icon-verbal.svg);
+  background-repeat: no-repeat;
+  padding-left: 2.8rem;
+  background-position: 7% 53%;
+  color:hsl(166, 100%, 37%);
+  font-weight: 600;
+}
+
+ul.summary-list li:last-child {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  background-image: url(./assets/images/icon-visual.svg);
+  background-repeat: no-repeat;
+  padding-left: 2.8rem;
+  background-position: 7% 53%;
+  color: hsl(234, 85%, 45%);
+  font-weight: 600;
+}
+
+
+
+ul.summary-list li .perli {
+  float: right;
+  padding-right: 1.5rem;
+  color: hsl(224, 30%, 27%);
+  font-weight: 900;
+}
+
+ul.summary-list li .li-out0f {
+  font-weight: 500;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.summary button {
+  background: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.summary button:hover{
+  background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  
+}
+
+@media screen and (max-width:760px) {
+
+  html {
+    font-size:14px;
+  }
+
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+}
+
+.main {
+  height: auto;
+}
+
+.result {
+  border-radius: 0 0 50px 50px;
+}
+
+.marksper span {
+  top: 20%;
+}
+
+.summary ul.summary-list li {
+  padding-left: 4rem;
+}
+
+.attribution {
+  margin-top: 20px;
+}
+
+}
